@@ -1,0 +1,31 @@
+.custom-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.custom-checkbox {
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    color: #333;
+    font-size: 13px;
+    user-select: none;
+    position: relative;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox.selected {
+    background-color: #0053ac;
+    border-color: #0053ac;
+    color: white;
+}
+
+.custom-checkbox:hover {
+    border-color: #007bff;
+}

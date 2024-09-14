@@ -1,0 +1,68 @@
+.AboutUs{
+    background-color: rgb(224, 242, 247);
+}
+#idididid{
+    background-color: rgb(224, 242, 247);
+}
+#abtimg{
+    width: 75%;
+}
+#imcol{
+    text-align: center;
+}
+#colh2right{
+    justify-items: right;
+    text-align: end;
+}
+img{
+    border-radius: 5%;
+    transition: 0.3s;
+}
+img:hover{
+    scale: 1.05;
+}
+h2{
+    transition: 0.3s;
+}
+h1{
+    transition: 0.3s;
+}
+h2:hover{
+    scale: 1.05;
+    
+}
+h1:hover{
+    scale: 1.05;
+}
+span{
+    font-family: "Sofia", sans-serif;
+
+}
+#paraa{
+    text-align: justify;
+}
+
+
+
+
+ *{
+    animation: fadeInOut 1s;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width:600px){
+    img{
+        display: none;
+    }
+    #colh2right{
+        text-align: start;
+    }
+}
