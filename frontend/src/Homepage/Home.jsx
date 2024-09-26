@@ -18,7 +18,8 @@ export default function Home(){
       <style>
           
       </style>
-    <Container className="Aboutus ml-5 mt-5 mb-5" >
+      <section id="aboutPage">
+      <Container className="Aboutus ml-5 mt-5 mb-5" >
       <h1><span style={{"color":"red"}}>A</span>bout Us</h1>
       <Row>
         <Col id="paraa" md={8}>Since our establishment in 2010, we have steadily grown to become a leading institution, specializing in both Hindi education and extracurricular activities. What began as a modest initiative, driven by a small group of dedicated and passionate educators, has flourished over the years. With a strong commitment to quality and a student-centered approach, we have expanded our reach, welcoming more students into our programs each year. Our growth has been a testament to the effectiveness of our educational philosophy, which emphasizes not only academic excellence but also the importance of personal development through extracurricular engagement. This journey has enabled us to create a dynamic learning environment that continues to evolve and accommodate the growing needs of our diverse student body.</Col>
@@ -49,6 +50,8 @@ export default function Home(){
       </Row>
       
     </Container>
+      </section>
+    
     <br></br>
             </div>
             <Contact/>

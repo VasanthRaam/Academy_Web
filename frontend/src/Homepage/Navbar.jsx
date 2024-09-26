@@ -5,6 +5,12 @@ import './nav.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navigation({isHomePage}) {
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <Navbar 
     className={`navbar ${isHomePage && 'home-navbar'}`}
@@ -36,9 +42,10 @@ export default function Navigation({isHomePage}) {
             >
               Home
             </Nav.Link>
-            <Nav.Link 
-              as={Link} 
-              to="/about" 
+            <Nav.Link
+              as={Link}
+              to="/" 
+              onClick={() => handleScroll('aboutPage')}
               style={{ color: 'black', fontSize: '18px' }}
             >
               About

@@ -24,7 +24,7 @@ export default function Contact() {
                             </Col>
                             {/* Card column */}
                             <Col xs={12} md={6}>
-                                <Card className="p-4 shadow-sm">
+                                <Card id="cont" className="p-4 shadow-sm">
                                     <Card.Body>
                                         <Card.Title className="mb-3">
                                             <h3><span style={{ color: "red" }}>V</span>asanth Academy</h3>
