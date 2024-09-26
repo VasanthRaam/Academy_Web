@@ -2,4 +2,10 @@
     color: black !important;
     font-size: 18px;
   }
-  
+.home-navbar{
+  background-color: transparent !important;
+  position: fixed; 
+   position: absolute; 
+   width: 100%; 
+    z-index: 1;  
+}

@@ -4,18 +4,18 @@ import { Link } from 'react-router-dom';
 import './nav.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function Navigation() {
+export default function Navigation({isHomePage}) {
   return (
     <Navbar 
+    className={`navbar ${isHomePage && 'home-navbar'}`}
       expand="lg" 
-      variant="light" 
-      style={{ backgroundColor: 'transparent' }} // Full transparency
+      // variant="light" 
+      style={{ backgroundColor: 'transparent' }} 
     >
       <Container>
-        {/* Brand name and logo */}
         <Navbar.Brand as={Link} to="/" style={{ color: 'Black', fontWeight: 'bold' }}>
-          <img
-            src="/images/vha.jpg" // Replace with your logo path
+          <img 
+            src="/images/vha.jpg" 
             width="30"
             height="30"
             className="d-inline-block align-top"

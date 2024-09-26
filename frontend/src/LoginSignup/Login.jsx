@@ -20,18 +20,18 @@ export default function Login() {
             console.log(response.data);
             if (response.status === 200) {
                 const studentId = response.data.identity;
-                toast.success("You have logged in successfully!", {
-                    position: "top-right",
-                    autoClose: 3000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: false,
-                    draggable: true,
-                });
+                // toast.success("You have logged in successfully!", {
+                //     position: "top-right",
+                //     autoClose: 3000,
+                //     hideProgressBar: true,
+                //     closeOnClick: true,
+                //     pauseOnHover: false,
+                //     draggable: true,
+                // });
                 
                 setTimeout(() => {
                     navigate(`/student/${studentId}`); 
-                }, 3000);
+                }, 1000);
             }
         } catch (error) {
             if (error.response && error.response.status === 401) {
@@ -59,6 +59,7 @@ export default function Login() {
     return (
         <>
             <Navigation />
+            
             <Container className="mt-5">
                 <Row className="justify-content-md-center">
                     <Col md={6}>

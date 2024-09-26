@@ -1,8 +1,8 @@
 .AboutUs{
-    background-color: rgb(224, 242, 247);
+    background-color: rgb(197, 206, 210);
 }
 #idididid{
-    background-color: rgb(224, 242, 247);
+    background-color: rgb(171, 188, 193);
 }
 #abtimg{
     width: 75%;
@@ -14,13 +14,13 @@
     justify-items: right;
     text-align: end;
 }
-img{
+/* img{
     border-radius: 5%;
     transition: 0.3s;
 }
 img:hover{
     scale: 1.05;
-}
+} */
 h2{
     transition: 0.3s;
 }

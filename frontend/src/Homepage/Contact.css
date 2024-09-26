@@ -1,0 +1,44 @@
+.image-container-2 {
+    position: relative;
+    background-image: url('./images/contact.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    opacity: 0.8; 
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-container {
+    width: 100%;
+    height: 350px; /* Height of the map */
+}
+
+/* Adjust the map height for smaller screens */
+@media (max-width: 767px) {
+    .map-container {
+        height: 250px; /* Adjust map height for mobile */
+    }
+    .image-container-2 {
+        position: relative;
+        background-image: url('./images/contact.jpg'); 
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        opacity: 0.8; 
+    }
+}
+
+
+.card {
+    height:300px;
+}

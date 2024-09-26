@@ -131,6 +131,7 @@ export default function Signup() {
     return (
         <>
             <Navigation />
+            
             <Container className="mt-4">
                 <Row className="justify-content-md-center">
                     <Col md={6}>

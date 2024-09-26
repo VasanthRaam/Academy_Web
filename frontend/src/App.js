@@ -6,6 +6,7 @@ import Signup from './LoginSignup/Signup';
 import Login from './LoginSignup/Login';
 import AboutUs from './Aboutpage/Aboutus';
 import StudentDashboard from './Dashboard/studentDashboard';
+import Course from './Coursepage/Course';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="/courses" element={<Course />} />
             <Route path="/student/:id" element={<StudentDashboard/>} />
         </Routes>
 
