@@ -59,7 +59,7 @@ span{
 }
 
 @media only screen and (max-width:600px){
-    img{
+    #abtimg{
         display: none;
     }
     #colh2right{
