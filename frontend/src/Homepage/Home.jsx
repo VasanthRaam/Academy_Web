@@ -10,7 +10,7 @@ export default function Home(){
     return(
         <>
             <Navigation isHomePage={true} />
-            <div className="image-container">
+            <div className="image-container" id="homePage">
                 <img src="./images/sample.jpg" alt="home" />
             </div>
             <div id="idididid">
@@ -19,6 +19,7 @@ export default function Home(){
           
       </style>
       <section id="aboutPage">
+      <br/>
       <Container className="Aboutus ml-5 mt-5 mb-5" >
       <h1><span style={{"color":"red"}}>A</span>bout Us</h1>
       <Row>

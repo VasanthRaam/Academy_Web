@@ -98,7 +98,7 @@ export default function StudentDashboard() {
                     </Col>
                     <Col md={3} id="stud-info" className="atdns">
                     <h3 id="top-details">Attendance</h3><br></br>
-                        <AttendanceCircle percentage={80} />
+                        <AttendanceCircle percentage={75} />
                     </Col>
                 </Row>
                 <br />
@@ -115,6 +115,9 @@ export default function StudentDashboard() {
                         </div>
                     )
                 ))}
+                <br/>
+                
+                
             </Container>
         </>
     );

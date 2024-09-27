@@ -5,6 +5,12 @@ import './nav.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navigation() {
+  const handleNavLinkScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <Navbar 
       expand="lg" 
@@ -36,10 +42,11 @@ export default function Navigation() {
             >
               Home
             </Nav.Link>
-            <Nav.Link 
-              as={Link} 
-              to="/about" 
-              style={{ color: 'black', fontSize: '18px' }}
+            <Nav.Link
+              as={Link}
+              to="/"
+              onClick={() => handleNavLinkScroll('aboutPage')}
+              style={{ fontSize: '18px' }}
             >
               About
             </Nav.Link>
@@ -57,18 +64,6 @@ export default function Navigation() {
             >
               Logout
             </Nav.Link>
-
-            {/* <NavDropdown 
-              title="Login/Register" 
-              
-              id="basic-nav-dropdown" 
-              // style={{ color: 'black', fontSize: '18px' }}
-              // style={{ color: 'black !important', fontSize: '18px' }}
-
-            >
-              <NavDropdown.Item as={Link} to="/login">Login</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/signup">Register</NavDropdown.Item>
-            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

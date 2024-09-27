@@ -1,11 +1,26 @@
 .navbar-nav .nav-link.dropdown-toggle {
-    color: black !important;
-    font-size: 18px;
-  }
-.home-navbar{
+  color: black !important;
+  font-size: 18px;
+}
+
+.home-navbar {
   background-color: transparent !important;
-  position: fixed; 
-   position: absolute; 
-   width: 100%; 
-    z-index: 1;  
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transition: background-color 0.3s ease; 
+}
+
+.home-navbar.scrolled {
+  background-color: white !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 18px;
+}
+
+.navbar.scrolled .nav-link {
+  color: black !important; 
 }

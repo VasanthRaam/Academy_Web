@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const registerRoutes = require('./routes/registerRoutes');
 const loginRoutes = require('./routes/loginRoutes');
+const studentRoutes = require('./routes/studentRoutes');
 
 const app = express();
 
@@ -16,6 +17,8 @@ mongoose.connect('mongodb://localhost:27017/Student_Data')
 
 app.use('/api/register', registerRoutes);
 app.use('/api/login', loginRoutes);
+
+app.use('/api/student', studentRoutes);
 
 const port = 8000;
 app.listen(port, () => {

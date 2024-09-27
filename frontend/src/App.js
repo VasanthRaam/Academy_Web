@@ -4,7 +4,7 @@ import Home from './Homepage/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signup from './LoginSignup/Signup';
 import Login from './LoginSignup/Login';
-import AboutUs from './Aboutpage/Aboutus';
+//import AboutUs from './Aboutpage/Aboutus';
 import StudentDashboard from './Dashboard/studentDashboard';
 import Course from './Coursepage/Course';
 
