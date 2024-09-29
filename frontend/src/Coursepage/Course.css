@@ -19,28 +19,7 @@ body, html {
   margin-bottom: 20px;
 }
 
-.inline-buttons .list-group-item {
-  width:12vw; 
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
 
-.inline-buttons .list-group-item:hover {
-  transform: scale(1.05);
-}
-
-.inline-buttons .list-group-item {
-  background: #5E5DF0;
-  border-radius: 8px;
-  box-shadow: #5E5DF0 0 10px 20px -10px;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 8px 18px;
-  margin-right: 10px;
-  border: 0;
-  margin-bottom: 10px; 
-}
 
 
 .description-box {
@@ -65,16 +44,7 @@ body, html {
 
 
 @media (max-width: 768px) {
-  .inline-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
   
-  .inline-buttons .list-group-item {
-    width: 90%;
-    margin-right: 0; 
-  }
-
  
   #imgincourse {
     width: 150px;
@@ -83,18 +53,53 @@ body, html {
 
 
 @media (min-width: 769px) {
-  .inline-buttons {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .inline-buttons .list-group-item {
-    width: 12vw; 
-    font-size: 16px;
-    padding: 10px 20px; 
-  }
+  
 
   #imgincourse {
     width: 200px;
   }
+}
+
+.inline-buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px; /* Adds space between each button/dropdown */
+}
+
+#dropdown-basic-button {
+  width: 100%; /* Ensures all buttons and dropdowns take up full width */
+  margin-bottom: 10px; /* Adds some spacing between each button */
+}
+
+@media (max-width: 768px) {
+  .inline-buttons {
+    gap: 4px; /* Smaller gap for mobile */
+  }
+  .inline-buttons {
+    display:contents;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px; /* Adds space between each button/dropdown */
+    font-size: 13px;
+  }
+
+  #dropdown-basic-button{
+    font-size: 14px; /* Adjust font size for better readability */
+    padding: 10px;
+    width: 50vw;
+    scale: 0.7;
+  }
+  #description-box{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+#about {
+  padding-top: 20px;
+}
+
+h2 {
+  margin-bottom: 20px; /* Adds space below the "Courses" heading */
 }
