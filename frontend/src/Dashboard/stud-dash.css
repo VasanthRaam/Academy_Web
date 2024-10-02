@@ -5,3 +5,8 @@
 #stud-img{
     text-align: center;
 }
+@media (max-width: 767px) {
+    #profphoto{
+        display: none;
+    }
+}

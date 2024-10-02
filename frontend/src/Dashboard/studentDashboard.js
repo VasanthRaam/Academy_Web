@@ -87,7 +87,7 @@ export default function StudentDashboard() {
                 <br />
                 <Row>
                     <Col id="stud-img" md={3}>
-                        <img alt="user-image" style={{ width: "75%" }} src={user} />
+                        <img id="profphoto" alt="user-image" style={{ width: "75%" }} src={user} />
                     </Col>
                     <Col md={6} id="stud-info">
                         <h3 id="top-details">Welcome, {studentData.name}</h3>
